@@ -1,0 +1,13 @@
+# Sensitive information
+secret/
+
+# Node modules
+node_modules/
+
+# Build outputs
+dist/
+
+# Temp and generated
+webpack
+package-lock.json
+3d_visualize_rmit@*
