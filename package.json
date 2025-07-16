@@ -4,8 +4,10 @@
   "description": "3D visualization of an area for include BIMs",
   "main": "index.js",
   "scripts": {
-    "build": "node_modules/.bin/webpack --config webpack.config.js",
-    "start": "node_modules/.bin/webpack serve --config webpack.config.js --open"
+    "build_linux": "node_modules/.bin/webpack --config webpack.config.js",
+    "start_linux": "node_modules/.bin/webpack serve --config webpack.config.js --open",
+    "build_windows": "webpack --config webpack.config.js",
+    "start_windows": "webpack serve --config webpack.config.js --open"
   },
   "repository": {
     "type": "git",
