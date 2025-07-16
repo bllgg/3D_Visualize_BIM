@@ -12,6 +12,7 @@ import "../src/css/main.css";
 // Your access token can be found at: https://cesium.com/ion/tokens.
 const ionToken = process.env.CESIUM_ION_TOKEN;
 Ion.defaultAccessToken = ionToken;
+// Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4ZTgwYWRjNC02OGY1LTQ3MjUtYWNmZi0xZDlmNjMyYzVmMmUiLCJpZCI6MzE4NDE5LCJpYXQiOjE3NTI2NDE2MTF9.Fo91DYUsQCdyjvvHPd7EgT_KaS9wvgZPxJTTuoL3R8A";
 
 // Initialize the Cesium Viewer in the HTML element with the `cesiumContainer` ID.
 const viewer = new Viewer("cesiumContainer", {

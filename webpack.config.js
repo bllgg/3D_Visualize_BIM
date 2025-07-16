@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 // The path to the CesiumJS source code
 const cesiumSource = "node_modules/cesium/Source";
 const cesiumWorkers = "../Build/Cesium/Workers";
@@ -54,6 +56,9 @@ module.exports = {
     new webpack.DefinePlugin({
       // Define relative base path in cesium for loading assets
       CESIUM_BASE_URL: JSON.stringify(""),
+    }),
+    new webpack.DefinePlugin({
+      'process.env.CESIUM_ION_TOKEN': JSON.stringify(process.env.CESIUM_ION_TOKEN || ''),
     }),
   ],
   mode: "development",
