@@ -1,5 +1,6 @@
 # Sensitive information
 secret/
+.env
 
 # Node modules
 node_modules/
